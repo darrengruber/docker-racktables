@@ -1,0 +1,7 @@
+racktables:
+  build: .
+  ports:
+    - "80"
+
+#mysql:
+#  image: mysql:latest
