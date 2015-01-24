@@ -1,7 +1,14 @@
 racktables:
   build: .
+  links:
+    - mysql:mysql
   ports:
-    - "80"
+    - "80:80"
 
-#mysql:
-#  image: mysql:latest
+mysql:
+  image: mysql:latest
+  environment:
+    - MYSQL_ROOT_PASSWORD=littlebobbytables
+    - MYSQL_USER=racktables
+    - MYSQL_PASSWORD=racktables
+    - MYSQL_DATABASE=racktables
