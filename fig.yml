@@ -12,3 +12,11 @@ mysql:
     - MYSQL_USER=racktables
     - MYSQL_PASSWORD=racktables
     - MYSQL_DATABASE=racktables
+#  volumes_from:
+#    - data
+
+#data:
+#  image: busybox:latest
+#  command: true
+#  volumes:
+#    - mysqldata:/var/lib/mysql
